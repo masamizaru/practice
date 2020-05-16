@@ -1,0 +1,40 @@
+@charset "uft-8";
+
+/* ====入力フォーム==== */
+#form1 input, #form1 textarea {
+  /* フォントサイズ */
+  font-size: 16px;
+  /* ボーダー */
+  border: 1px solid #999999;
+  /* padding */
+  padding: 2px;
+  /* 角丸にする */
+  border-radius: 3px;
+  /* 影をつける */
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+#form1 input:focus, #form1 textarea:focus {
+  /* 影を付ける */
+  box-shadow: 0 0 5px 2px #ccccee;
+  /* アウトラインを無しにする */
+  outline-style: none;
+}
+
+#form1 p input {
+  /* 幅と高さ */
+  width: 300px; height: 40px;
+  /* ボーダー無し */
+  border: 0;
+}
+
+#form1 p {
+  /* センタリング */
+  text-align: center;
+  /* 字下げ幅をゼロにする */
+  text-indent: 0;
+}
+
+input[type="text"] ,input[type="email"] {
+  width: 70%;
+}

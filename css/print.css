@@ -1,0 +1,39 @@
+@charset "uft-8";
+
+/* ====全般的なスタイル==== */
+body {
+  /* ページ全体の背景色 */
+  background-color: #ffffff;
+  /* 文字色 */
+  color: #000000;
+}
+
+div#pagebody, div#info, p, hr {
+  /* 幅の指定 */
+  width: 100%;
+}
+
+/* ====メインメニュー・ヘッダ画像・サブメニュー・フッタ==== */
+ul#menu, #img_index, #img_subpage, div#submenu, div#footer {
+  /* 非表示にする */
+  display: none;
+}
+
+/* ====インフォメーション（右カラム）==== */
+.infoing_index {
+  /* 画像の表示サイズを指定 */
+  width: 200px; height: 150px;
+  /* margin */
+  margin: 0 0 20px 20px;
+  /* 画像を右寄せにする */
+  float: right;
+}
+  
+.infoing_subpage {
+  /* 画像の表示サイズを指定 */
+  width: 400px; height: 300px;
+  /* margin */
+  margin: 0 20px 20px 0;
+  /* 画像を左寄せにする */
+  float: left;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- HTMLクイックリファレンスのホームページでは、フォームメーラー無料版で使用可能な文字コード【"shift_jis"】と記載するよう指示あり！ 
+  ※フォームメーラーではHTMLコードの編集は不可!
+  今回は、このページ(contact.html)にだけshitf_jisを指定したことで、文字化けしてしまったため、便宜的に【 】内のコードを編集した。
+  ※実際に公開するページでは編集しちゃだめ！-->
+  
+  <meta charset="UFT-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" media="screen and (max-width:800px)" href="css/base_sp.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" media="print" href="css/print.css">
+  <title>お問合せ｜ウェブサンプル株式会社</title>
+</head>
+
+<body>
+  <div id="pagebody">
+    <!-- ヘッダ -->
+    <div id="header">
+      <h1>
+        <a href="index.html"><img src="images/logo.png" alt="ウェブサンプル株式会社"></a>
+      </h1>
+    </div>
+
+    <!-- メインメニュー -->
+    <ul id="menu">
+      <li>
+        <a href="index.html">ホーム</a>
+      </li>
+      <li>
+        <a href="product.html">製品紹介</a>
+      </li>
+      <li>
+        <a href="profile.html">会社概要</a>
+      </li>
+      <li>
+        <a href="contact.html">お問合せ</a>
+      </li>
+    </ul>
+
+    <!-- ヘッダ画像 -->
+    <div id="img_subpage">
+      <img src="images/img_contact.png" alt="お問合せ">
+    </div>
+
+    <!-- サブメニュー（左カラム） -->
+    <div id="submenu">
+      <h2>お問合せ</h2>
+      <ul>
+        <li>
+          <a href="#info0001">フォームからのお問合せ</a>
+        </li>
+        <li>
+          <a href="#info0002">メールでのお問合せ</a>
+        </li>
+        <li>
+          <a href="#info0003">お電話でのお問合せ</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- インフォメーション（右カラム）
+    ※フォームメーラーの文字化け解消のために【accept-charset="Shift-JIS"】を追加 -->
+    <div id="info">
+      <h3 id="info0001">フォームからのお問合せ</h3>
+      <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" accept-charset="Shift-JIS" ENCTYPE="multipart/form-data">
+        <input type="hidden" name="key" value="9c36f6cf664674" >
+        
+        
+        *は必須項目です
+        
+        
+        
+        
+        <!-- radio -->
+        <p>*お問合せ区分</p>
+        <p><input name="field_5720368" type="radio" value="0">商品に関するお問合せ
+        <input name="field_5720368" type="radio" value="1">採用に関するお問合せ
+        <input name="field_5720368" type="radio" value="2">その他のお問合せ
+        </p>
+        <!-- text:mail -->
+        <p>*メールアドレス</p>
+        <p><input name="field_5720405" type="text" size="30">
+        </p>
+        <!-- name -->
+        <p>*名前</p>
+        <p>姓
+        <input name="field_5720406_sei" type="text" style="width:100px;">
+        名
+        <input name="field_5720406_mei" type="text" style="width:100px;">
+        </p>
+        <!-- textarea -->
+        <p>*お問合せの内容</p>
+        <p>
+        
+        <textarea name="field_5720407" cols="40" rows="5"></textarea>
+        
+        </p>
+        
+        
+        
+        <!-- charset -->
+        <!-- charset -->
+        <!-- paypal no confirm alert -->
+        
+        <!-- paypal no confirm alert 
+        ※フォームメーラーの文字化け解消のために【on click="document.charset= 'Shift-JIS' ;"】を追加-->
+        <p><input name="submit" type="submit"  on click="document.charset= 'Shift_JIS' ;" value="確認画面へ">
+        
+        </p>
+        <!-- PayPal Logo -->
+        
+        <!-- PayPal Logo -->
+        <p><a href="https://www.form-mailer.jp/" target="_blank" id="powered">Powered by FormMailer.</a></p>
+        </form>
+        
+        <a href="https://www.form-mailer.jp/?utm_source=usersite&utm_medium=banner&utm_campaign=banner-link-Installation&utm_content=banner_g04.gif" target="_blank"><img src="https://www.form-mailer.jp/img/banner_g04.gif" alt="SSL標準装備の無料メールフォーム作成・管理ツール｜フォームメーラー" border="0" /></a>
+      <hr>
+
+      <h3 id="info0002">メールでのお問合せ</h3>
+      <p>
+        <a href="mailto:xxx@xxxxxx.xxx?subject=ウェブサイトからのお問合せ&body=お問合せ区分をご記入ください（商品・採用・その他） :">xxx@xxxxxx.xxx</a>        
+        までメールをお送りください。
+      </p>
+      <hr>
+
+      <h3 id="info0003">お電話でのお問合せ</h3>
+      <p>
+        <a href="tel:0000000000">
+        <img src="images/contact0001.png" alt="電話番号0000-000-000" class="infoing_tel"></a>
+      </p>
+      
+      <div class="remarks">
+        <h4>受付時間</h4>
+        受付時間は、平日午前9時から午後9時までとなります。<br>
+      </div>
+      <hr>
+    </div>
+
+    <!-- フッタ -->
+    <div id="footer">
+      <small>Copyright (c)ウェブサンプル株式会社 All Rights Reserved.</small>
+    </div>
+
+  </div>
+</body>
+</html>

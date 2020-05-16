@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/* ====全般的なスタイル==== */
+* {
+  /* 全要素のmargin、paddingをリセット */
+  margin: 0; padding: 0;
+}
+
+
+body {
+  /* ページ全体の背景色 */
+  background-color: #cccccc;
+  /* ウェブページ全体の背景画像 */
+  background-image: url(../images/bg_body.png);
+  /* フォントサイズを95%にする */
+  font-size: 95%; 
+  /* フォントの種類をゴシック系にする */
+  font-family: "MS ゴシック", sans-serif;
+  /* 行の高さを文字の高さの1.5倍にする */
+  line-height: 1.5;
+  /* 文字色を濃い目のグレーにする */
+  color: #333333;
+}
+
+div#pagebody {
+  /* 内容全体をセンタリング　↓上下marginを０、左右marginを自動算出 */
+  width: 1000px; margin: 0 auto;
+  /* 内容全体の背景色 */
+  background-color: #ffffff;
+  /* コンテンツ全体の背景画像 */
+  background-image: url(../images/bg_pagebody.png);
+  /* 背景画像を縦方向に繰り返す */
+  background-repeat: repeat-y;
+}
+
+img {
+  /* 画像のボーダーを0にする */
+  border: 0;
+}
+
+p {
+  /* 幅の指定 */
+  width: 660px;
+  /* margin */
+  margin: 10px;
+  /* インデント幅 */
+  text-indent: 1em;
+}
+
+hr {
+  /* フロート配置をクリアする */
+  clear: both;
+  /* 幅の指定 */
+  width: 680px;
+  /* margin */
+  margin: 10px 0;
+  /* 内容の区切りをグレーの点線表示にする */
+  border: 1px dotted #cccccc;
+}
+
+/* ====ヘッダ==== */
+div#header {
+  /* ヘッダ部分の高さ */
+  height: 80px;
+}
+
+div#header h1 {
+  /* 見出しの位置調整 */
+  padding: 10px 0 5px 20px;
+  /* フォントのサイズ */
+  font-size: 18px;
+  /* フォントの種類 */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div#header h1 a {
+  /* リンク部分を下線無しにする */
+  text-decoration: none;
+}
+
+/* ====メインメニュー==== */
+ul#menu {
+  /* メインメニュー部分の幅と高さ */
+  width: 960px; height: 50px;
+  /* 上下margin0px、左右margin20px */
+  margin: 0 20px;
+}
+
+#menu li {
+  /* リストマーカー無しにする */
+  list-style-type: none;
+  /* リスト項目をインライン表示にする */
+  display: inline;
+  /* リスト項目を横に並べる */
+  /* ↓の指示があれば、↑のdisplay: inline;はいらないよ、の波線。上の指示をコメントアウトさせれば、波線が消える！ */
+  float: left;
+}
+
+#menu li a {
+  /* 背景色 */
+  background-color: navy;
+  /* 文字色 */
+  color: #ffffff;
+  /* リンク部分をブロック表示にする */
+  display: block;
+  /* 幅と高さ */
+  width: 240px; height: 35px;
+  /* 上パディング */
+  padding-top: 15px;
+  /* テキストをセンター揃えにする */
+  text-align: center;
+  /* リンク部分を下線無しにする */
+  text-decoration: none;
+  /* 背景画像を指定 */
+  background-image: url(../images/bg_menu1.png);
+  /* 背景画像を繰り返さない */
+  background-repeat: no-repeat;
+}
+
+#menu li a:hover {
+  /* リンクにマウスが乗ったら背景色を変更する */
+  background-color: #000066;
+  /* リンクにマウスが乗ったら背景画像を変更する */
+  background-image: url(../images/bg_menu2.png);
+}
+
+/* ====ヘッダ画像==== */
+#img_index {
+  /* トップページのヘッダ画像の表示サイズを指定 */
+  width: 960px; height: 360px;
+  /* margin */
+  margin: 5px 20px;
+}
+
+#img_subpage {
+  /* トップページ以外のヘッダ画像の表示サイズを指定 */
+  width: 960px; height: 240px;
+  /* margin */
+  margin: 5px 20px;
+}
+
+/* ====サブメニュー（左カラム）==== */
+h2 {
+  /* 幅と高さ */
+  width: 160px; height: 43px;
+  /* padding  */
+  padding: 17px 0 0 100px;
+  /* フォントサイズ */
+  font-size: 16px;
+  /* 背景画像 */
+  background-image: url(../images/bg_h2.png);
+  /* 背景画像を繰り返さない */
+  background-repeat: no-repeat;
+  /* 背景色 */
+  background-color: #000033;
+  /* 文字色 */
+  color: #ffffff;
+}
+
+div#submenu {
+  /* 幅の指定 */
+  width: 260px;
+  /* 位置調整 */
+  margin: 10px 10px 10px 25px;
+  /* サブメニューのカラムを左寄せにする */
+  float: left;
+}
+
+div#submenu ul li {
+  /* リストマーカー無しにする */
+  list-style-type: none;
+}
+
+div#submenu ul li a {
+  /* リンクをブロック表示にする */
+  display: block;
+  /* 高さを45pxにする */
+  height: 45px;
+  /* padding */
+  padding: 15px 0 0 30px;
+  /* リンクの下線を無くす */
+  text-decoration: none;
+  /* リンク領域の下部にボーダーを付ける */
+  border-bottom: 1px dotted gray;
+  /* リンク領域に背景画像を付ける */
+  background-image: url(../images/bg_submenu.png);
+  /* 背景画像を繰り返さない */
+  background-repeat: no-repeat;
+  /* 文字色 */
+  color: #333333;
+}
+
+div#submenu ul li:first-child a {
+  /* 一番上のリンクに上線を表示 */
+  border-top: 1px dotted gray;
+}
+
+div#submenu ul li a:hover {
+  /* リンクにマウスが乗ったら下線を表示 */
+  text-decoration: underline;
+}
+
+div#submenu ul li a:before {
+  /* アイコン画像を挿入 */
+  content: url("../images/icon_submenu.png");
+  /* margin */
+  margin: 0 10px 0 0;
+  /* 縦方向の表示位置 */
+  vertical-align: text-top;
+}
+
+/* ====インフォメーション（右カラム）==== */
+div#info {
+  /* 幅の指定 */
+  width: 660px;
+  /* カラムを左寄せにする */
+  float: left;
+  /* padding */
+  padding: 10px 20px 0 0;
+}
+
+h3 {
+  /* 文字サイズ */
+  font-size: 14px;
+  /* 横幅 */
+  width: 660px;
+  /* padding */
+  padding: 10px 0 10px 20px;
+  /* 背景色 */
+  background-color: #003399;
+  /* 文字色 */
+  color: #ffffff;
+  /* 角丸にする */
+  border-radius: 3px;
+}
+
+.infoing_index {
+  /* トップページのヘッダ画像の表示サイズを指定 */
+  width: 200px; height: 150px;
+  /* margin */
+  margin: 0 0 20px 20px;
+  /* 画像を右寄せにする */
+  float: right;
+}
+
+.infoing_subpage {
+  /* 画像の表示サイズを指定 */
+  width: 400px; height: 300px;
+  /* margin */
+  margin: 0 20px 20px 0;
+  /* 画像を左寄せにする */
+  float: left;
+}
+
+.infoing_tel {
+  /* ブロック表示にする */
+  display: block;
+  /* 画像の表示サイズを指定 */
+  width: 400px; height: 80px;
+}
+
+hr {
+  /* フロート配置をクリアする */
+  clear: both;
+}
+
+/* ====備考情報==== */
+div.remarks {
+  margin: 0 10px 10px 10px;
+}
+
+h4 {
+  color: #000066;
+}
+
+/* =====フッター==== */
+div#footer {
+  /* 回り込みを解除する */
+  clear: both;
+  /* 高さの指定 */
+  height: 40px;
+  /* padding */
+  padding: 10px 0 0 0;
+  /* フォントサイズを小さくする */
+  font-size: x-small;
+  /* センタリング */
+  text-align: center;
+}
